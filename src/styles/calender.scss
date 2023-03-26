@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+}
+.error {
+	color: #fa5352;
+	text-transform: capitalize;
+	font-size: 12px;
+}
+.calender__container {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+}
+.calender__container-content {
+	width: 800px;
+	margin: 2rem auto;
+}
+.calender__container-weather {
+	width: 20%;
+}
+.calender__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	position: relative;
+}
+.action__btn-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.weather__container {
+	border: 1px solid #ddd;
+	background-color: white;
+	box-shadow: 4px 3px 8px #ddd;
+	border-radius: 3px;
+	width: 100%;
+	margin-top: 10px;
+	height: 130px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-transform: uppercase;
+	color: #858586;
+	h3 {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	h4 {
+		font-size: 11px;
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+	h1 {
+		font-size: 29px;
+		font-weight: 700;
+	}
+}
+.calender__footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+
+	button {
+		width: 50%;
+		margin: 0;
+		gap: 7px;
+		background-color: #2f73b5;
+		padding: 8px;
+		cursor: pointer;
+		border: none;
+		color: white;
+		border-left: 1px solid white;
+	}
+}
+.add__reminder-btn {
+	border: none;
+	padding: 4px 10px;
+	background-color: #07447f;
+	color: white;
+	border-radius: 5px;
+}
+
+.calender {
+	border: 1px solid #d4d4d4;
+	.calender__header {
+		background-color: #2f73b5;
+		color: white;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		list-style-type: none;
+	}
+
+	.calender__body {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat (5, 1fr);
+		list-style-type: none;
+		.calender__body-list {
+			border: 0.4px solid #ddd;
+			height: 6rem;
+			color: #5a5757;
+			overflow-y: auto;
+			padding: 5px;
+			font-weight: 600;
+			.calender__reminder {
+				background: #3ac16e;
+				color: white;
+				font-size: 9px;
+				border-radius: 5px;
+				margin: 2px;
+				padding: 1px 6px;
+				cursor: pointer;
+				width: 100px;
+			}
+		}
+	}
+}
