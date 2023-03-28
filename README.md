@@ -42,6 +42,7 @@ This app uses AccuWeather api key can be found in the key.js file inside the uti
 - Dynamic Calendar - calendar supports more than the current month or year.
 - handle overflow when multiple reminders appear on the same date
 - Added weather service call from AccuWeather
+- Added Input validations
 
 ###### Limitations to api key usage
 
